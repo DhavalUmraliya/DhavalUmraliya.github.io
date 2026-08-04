@@ -1,0 +1,1607 @@
+<html lang="en"><head><script>
+(function() {
+  if (typeof window !== 'undefined' && window.location.protocol === 'file:') {
+    try {
+      Object.defineProperty(window.location, 'pathname', {
+        get: function() { return '/'; },
+        configurable: true
+      });
+    } catch(e) {}
+    var safeFn = function(fn) {
+      return function() {
+        try { return fn.apply(this, arguments); }
+        catch(e) { console.warn('File protocol history bypass:', e); }
+      };
+    };
+    if (window.history) {
+      window.history.pushState = safeFn(window.history.pushState);
+      window.history.replaceState = safeFn(window.history.replaceState);
+    }
+  }
+})();
+</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" as="image" href="landing-memojis.png"><link rel="stylesheet" href="_next/static/css/2d45464fbba65f10.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="_next/static/chunks/webpack-a0b559c7a893ff0c.js"><link rel="preload" href="https://datafa.st/js/script.js" as="script"><meta name="next-size-adjust" content=""><link rel="icon" href="/favicon.svg" sizes="any"><title>Dhaval Umraliya - Senior iOS Developer &amp; Mobile Architect (Swift &amp; SwiftUI)</title>
+<meta name="description" content="Senior iOS Developer &amp; Mobile Architect with 8+ years of experience engineering scalable, high-performance mobile apps in Swift, SwiftUI &amp; Combine. Built enterprise apps for 200K+ users with a 99.18% crash-free rate.">
+<meta name="keywords" content="Dhaval Umraliya, Senior iOS Developer, Mobile Architect, iOS Lead, Swift, SwiftUI, Objective-C, Combine, MVVM-C, VIPER, Clean Architecture, Modular Architecture, HealthKit, CoreBluetooth, BLE, MapKit, CoreLocation, AVFoundation, StoreKit, Fastlane, TestFlight, App Store Connect, Firebase Crashlytics, XCTest, XCUITest, Surat Developer, India iOS Engineer, iOS Portfolio">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Dhaval Umraliya">
+<link rel="canonical" href="https://dhaval.fr">
+
+<!-- Open Graph / Facebook SEO -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dhaval Umraliya - Senior iOS Developer &amp; Mobile Architect">
+<meta property="og:description" content="Senior iOS Developer with 8+ years of experience building scalable, high-performance iOS apps in Swift &amp; SwiftUI. 200K+ users, 99.18% crash-free rate.">
+<meta property="og:url" content="https://dhaval.fr">
+<meta property="og:site_name" content="Dhaval Umraliya Portfolio">
+<meta property="og:locale" content="en_US">
+<meta property="profile:first_name" content="Dhaval">
+<meta property="profile:last_name" content="Umraliya">
+<meta property="profile:username" content="dhavalumraliya">
+
+<!-- Twitter Card SEO -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dhaval Umraliya - Senior iOS Developer &amp; Mobile Architect">
+<meta name="twitter:description" content="Senior iOS Developer with 8+ years of experience building scalable, high-performance iOS apps in Swift &amp; SwiftUI.">
+<meta name="twitter:creator" content="@dhaval">
+
+<!-- JSON-LD Structured Data Schema for Google Search Engine -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dhaval Umraliya",
+  "jobTitle": "Senior iOS Developer & Mobile Architect",
+  "gender": "Male",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Surat",
+    "addressRegion": "Gujarat",
+    "addressCountry": "India"
+  },
+  "email": "mailto:dhavalumraliya777@gmail.com",
+  "telephone": "+918401513185",
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Veer Narmad South Gujarat University",
+    "degree": "Bachelor of Computer Applications (BCA)"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "LivWell Private Limited"
+  },
+  "knowsAbout": [
+    "Swift",
+    "SwiftUI",
+    "Objective-C",
+    "Combine Framework",
+    "MVVM-C Architecture",
+    "VIPER Architecture",
+    "Clean Architecture",
+    "HealthKit",
+    "CoreBluetooth BLE",
+    "MapKit",
+    "Fastlane",
+    "TestFlight",
+    "XCTest",
+    "Firebase Crashlytics"
+  ]
+}
+</script><meta name="description" content="Senior iOS Developer & Mobile Architect with 8+ years of experience building scalable, mission-critical mobile ecosystems in Swift, SwiftUI & Combine. 200K+ active users, 99.18% crash-free rate."><link rel="author" href="https://dhaval.fr"><meta name="author" content="Dhaval Umraliya"><meta name="keywords" content="Dhaval Umraliya, Senior iOS Developer, Mobile Architect, Swift, SwiftUI, Objective-C, Combine, MVVM-C, VIPER, Clean Architecture, HealthKit, BLE, Fastlane, TestFlight, XCTest, iOS Portfolio"><meta name="creator" content="Dhaval Umraliya"><meta property="og:title" content="Dhaval Umraliya - Senior iOS Developer"><meta property="og:description" content="Interactive portfolio for Dhaval Umraliya - Senior iOS Developer"><meta property="og:url" content="https://dhaval.fr"><meta property="og:site_name" content="Dhaval Umraliya Portfolio"><meta property="og:locale" content="en_US"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="@dhaval"><meta name="twitter:title" content="Dhaval Umraliya Portfolio"><meta name="twitter:description" content="Interactive portfolio for Dhaval Umraliya - Senior iOS Developer"><link rel="shortcut icon" href="/favicon.svg?v=2"><link rel="icon" href="/favicon.svg" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.svg?v=2"><script src="_next/static/chunks/polyfills_42372ed130431b0a.js" nomodule=""></script><link rel="preload" as="video" href="/final_memojis.webm"><link rel="prefetch" as="video" href="/final_memojis_ios.mp4"><link rel="stylesheet" href="css/inline_styles.css">
+<style>
+html, body {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  scroll-behavior: smooth !important;
+}
+</style>
+
+
+<script>
+window.tabData = {
+  me: {
+    title: "👨‍💻 About Dhaval Umraliya",
+    subtitle: "Senior iOS Developer • Mobile Architect • 8+ Years Experience",
+    html: `
+      <div class="space-y-4">
+        <div class="flex items-center gap-4 rounded-2xl bg-[#21262d] border border-teal-500/40 p-4">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-500/20 text-teal-400 text-2xl font-bold">👨‍💻</div>
+          <div>
+            <h3 class="text-xl font-extrabold text-white">Dhaval Umraliya</h3>
+            <p class="text-xs font-semibold text-teal-400">Senior iOS Developer & Mobile Architect • 8+ Years Experience</p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="rounded-xl border border-neutral-700 bg-[#21262d] p-4">
+            <h4 class="font-bold text-white mb-1 text-sm">🎯 Professional Summary</h4>
+            <p class="text-xs text-neutral-200 font-medium leading-relaxed">
+              Accomplished <strong>Senior iOS Developer & Mobile Architect</strong> with <strong>8+ years of experience</strong> engineering scalable, mission-critical iOS applications using Swift, SwiftUI, Objective-C & Combine. Proven track record of scaling apps to <strong>200,000+ active users</strong> with a <strong>99.18% crash-free rate</strong>.
+            </p>
+          </div>
+          
+          <div class="rounded-xl border border-neutral-700 bg-[#21262d] p-4">
+            <h4 class="font-bold text-white mb-1 text-sm">💡 Technical Core</h4>
+            <p class="text-xs text-neutral-200 font-medium leading-relaxed">
+              Specialized in <strong>Clean Architecture (MVVM-C, VIPER)</strong>, HealthKit & Wearable BLE Sync, MapKit, CoreLocation, 60FPS fluid UI rendering, ARC memory leak optimization, and automated <strong>Fastlane & TestFlight</strong> CI/CD.
+            </p>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  skills: {
+    title: "⚡ Skills & Technical Stack",
+    subtitle: "ATS-Optimized iOS Languages, Frameworks & Architecture",
+    html: `
+      <div class="space-y-3">
+        <div class="rounded-xl border border-neutral-700 bg-[#21262d] p-3.5">
+          <h4 class="text-xs font-bold text-purple-300 mb-2">📱 iOS Languages & Core Frameworks</h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Swift</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">SwiftUI</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">UIKit</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Objective-C</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Combine</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">CoreData</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Realm</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">HealthKit</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">CoreBluetooth (BLE)</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">MapKit</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">CoreLocation</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">AVFoundation</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">StoreKit</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-neutral-700 bg-[#21262d] p-3.5">
+          <h4 class="text-xs font-bold text-purple-300 mb-2">🏗 Architecture & Engineering Principles</h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">MVVM-C (Coordinator)</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">VIPER Architecture</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Clean Architecture</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Modular Design</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Protocol-Oriented Programming (POP)</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Dependency Injection (DI)</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Async/Await & Structured Concurrency</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">ARC Memory Leak Optimization</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-neutral-700 bg-[#21262d] p-3.5">
+          <h4 class="text-xs font-bold text-purple-300 mb-2">🛠 Tools, Testing & CI/CD Automation</h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Xcode & Instruments Leaks</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Fastlane & TestFlight</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">App Store Connect</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Firebase Crashlytics & Realtime DB</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Git & GitHub Actions CI/CD</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">XCTest & XCUITest</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30 font-semibold">Swift Package Manager (SPM)</span>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  projects: {
+    title: "🚀 Featured Projects & Technical Contributions",
+    subtitle: "8 Production iOS Apps from Resume",
+    html: `
+      <div class="space-y-3 max-h-[350px] overflow-y-auto pr-1">
+        <div class="rounded-xl border border-neutral-700 bg-[#21262d] p-3.5">
+          <div class="flex justify-between items-start">
+            <h4 class="text-sm font-bold text-white">1. LivWell Asia – InsurTech & Health Platform</h4>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-500/30">200K+ Users • Aug 2022 – Present</span>
+          </div>
+          <p class="text-[11px] text-emerald-300 mt-1 font-semibold">Tech: SwiftUI, Combine, HealthKit, Wearable BLE SDKs, Firebase, Fastlane</p>
+          <p class="text-xs text-neutral-200 font-medium mt-1.5 leading-relaxed">
+            Enterprise InsurTech & wellness app across SEA with AI vital health scans, LW Coin rewards, wearable BLE sync, and 99.18% crash-free rate.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-neutral-700 bg-[#21262d] p-3.5">
+          <div class="flex justify-between items-start">
+            <h4 class="text-sm font-bold text-white">2. AQI.com – Air Quality Monitor</h4>
+            <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full border border-blue-500/30">Live Map & Charts • Mar 2021 – Aug 2022</span>
+          </div>
+          <p class="text-[11px] text-blue-300 mt-1 font-semibold">Tech: Swift, Core Location, MapKit, Firebase Realtime DB, Charts</p>
+          <p class="text-xs text-neutral-200 font-medium mt-1.5 leading-relaxed">
+            Real-time global pollution monitoring with MapKit heat map overlays, continuous location updates, and toxic threshold push alerts.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-neutral-700 bg-[#21262d] p-3.5">
+          <div class="flex justify-between items-start">
+            <h4 class="text-sm font-bold text-white">3. Spellex – Healthcare Medical Keyboard</h4>
+            <span class="text-[10px] bg-sky-500/20 text-sky-300 px-2 py-0.5 rounded-full border border-sky-500/30">500K+ Medical Terms</span>
+          </div>
+          <p class="text-[11px] text-sky-300 mt-1 font-semibold">Tech: Swift, Multi-Threading, Custom Keyboard Extension</p>
+          <p class="text-xs text-neutral-200 font-medium mt-1.5 leading-relaxed">
+            Custom iOS keyboard with 500,000+ medical terms and multi-threaded real-time text processing for healthcare professionals.
+          </p>
+        </div>
+      </div>
+    `
+  },
+  contact: {
+    title: "📬 Let's Connect",
+    subtitle: "Get in touch with Senior iOS Developer Dhaval Umraliya",
+    html: `
+      <div class="space-y-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <a href="mailto:dhavalumraliya777@gmail.com" class="flex items-center gap-3 rounded-xl border border-neutral-700 bg-[#21262d] p-3.5 hover:bg-white/10 transition">
+            <span class="text-2xl">📧</span>
+            <div>
+              <h4 class="text-xs font-bold text-white">Direct Email</h4>
+              <p class="text-xs text-amber-300 font-semibold">dhavalumraliya777@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+918401513185" class="flex items-center gap-3 rounded-xl border border-neutral-700 bg-[#21262d] p-3.5 hover:bg-white/10 transition">
+            <span class="text-2xl">📞</span>
+            <div>
+              <h4 class="text-xs font-bold text-white">Phone Call</h4>
+              <p class="text-xs text-amber-300 font-semibold">+91 84015 13185</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex justify-center pt-2">
+          <a href="Dhaval_Umraliya_Resume.pdf" download="Dhaval_Umraliya_Resume.pdf" class="flex items-center gap-2.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-xs font-bold text-white hover:scale-105 transition shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download Official Resume PDF</span>
+          </a>
+        </div>
+      </div>
+    `
+  }
+};
+
+
+window.openTabModal = function(tabKey) {
+  tabKey = (tabKey || 'me').toLowerCase();
+  const modal = document.getElementById('tab-modal');
+  const bgWrapper = document.getElementById('hero-section') || document.querySelector('main');
+  if (!modal) {
+    console.error('tab-modal element not found!');
+    return;
+  }
+
+  window.switchModalTab(tabKey);
+
+  modal.classList.remove('hidden');
+  modal.style.display = 'flex';
+  modal.style.visibility = 'visible';
+  modal.style.pointerEvents = 'auto';
+  modal.style.zIndex = '999999';
+  
+  setTimeout(function() {
+    modal.style.opacity = '1';
+    modal.classList.remove('opacity-0');
+    const inner = document.getElementById('modal-card-inner');
+    if (inner) {
+      inner.style.transform = 'scale(1)';
+      inner.classList.remove('scale-95');
+      inner.classList.add('scale-100');
+    }
+    if (bgWrapper) {
+      bgWrapper.style.opacity = '0.2';
+      bgWrapper.style.filter = 'blur(8px)';
+      bgWrapper.style.transition = 'all 0.3s ease';
+    }
+  }, 10);
+};
+
+window.closeTabModal = function() {
+  const modal = document.getElementById('tab-modal');
+  const bgWrapper = document.getElementById('hero-section') || document.querySelector('main');
+  if (!modal) return;
+
+  modal.style.opacity = '0';
+  const inner = document.getElementById('modal-card-inner');
+  if (inner) {
+    inner.style.transform = 'scale(0.95)';
+  }
+  if (bgWrapper) {
+    bgWrapper.style.opacity = '1';
+    bgWrapper.style.filter = 'none';
+  }
+
+  setTimeout(function() {
+    modal.style.display = 'none';
+    modal.style.visibility = 'hidden';
+    modal.style.pointerEvents = 'none';
+    modal.classList.add('hidden');
+  }, 300);
+};
+
+
+window.switchModalTab = function(tabKey) {
+  tabKey = (tabKey || 'me').toLowerCase();
+  const body = document.getElementById('modal-tab-body');
+  if (body && window.tabData[tabKey]) {
+    body.innerHTML = window.tabData[tabKey].html;
+  }
+
+  ['me', 'projects', 'skills', 'fun', 'contact'].forEach(function(t) {
+    const btn = document.getElementById('modal-tab-' + t);
+    if (btn) {
+      if (t === tabKey) {
+        btn.className = 'flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-blue-600 text-white shadow-lg border border-blue-400/40';
+      } else {
+        btn.className = 'flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-[#21262d] border border-neutral-700 text-neutral-200 font-medium hover:bg-white/10 hover:text-white border border-transparent';
+      }
+    }
+  });
+};
+
+// Smooth Scroll Function for Top Hero Buttons
+window.scrollToSection = function(sectionId) {
+  console.log('scrollToSection called for:', sectionId);
+  const el = document.getElementById(sectionId);
+  if (!el) {
+    console.warn('Section element not found:', sectionId);
+    return;
+  }
+
+  // Force body overflow auto just in case
+  document.documentElement.style.overflowY = 'auto';
+  document.body.style.overflowY = 'auto';
+
+  const rect = el.getBoundingClientRect();
+  const absoluteTop = rect.top + window.pageYOffset - 90; // 90px offset for top breathing room
+
+  console.log('Scrolling to Y offset:', absoluteTop);
+
+  window.scrollTo({
+    top: Math.max(0, absoluteTop),
+    behavior: 'smooth'
+  });
+};
+
+// Global click handler to guarantee clicks on top hero buttons trigger smooth scroll
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('#btn-me, #btn-skills, #btn-experience, #btn-projects, #btn-contact, [id^="btn-"]');
+  if (!btn) return;
+
+  const id = btn.id || '';
+  const text = (btn.innerText || '').trim().toLowerCase();
+
+  let targetId = null;
+  if (id === 'btn-me' || text === 'me' || text.includes('about')) targetId = 'section-me';
+  else if (id === 'btn-skills' || text.includes('skill')) targetId = 'section-skills';
+  else if (id === 'btn-experience' || text.includes('experience')) targetId = 'section-experience';
+  else if (id === 'btn-projects' || text.includes('project')) targetId = 'section-projects';
+  else if (id === 'btn-contact' || text.includes('contact') || text.includes('connect')) targetId = 'section-contact';
+
+  if (targetId) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.scrollToSection(targetId);
+  }
+}, true);
+</script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+html, body, button, input, textarea {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif !important;
+  letter-spacing: -0.025em !important;
+}
+</style>
+
+</head>
+
+<body class="bg-background min-h-screen font-sans antialiased __variable_f367f3">
+<a href="Dhaval_Umraliya_Resume.pdf" download="Dhaval_Umraliya_Resume.pdf" class="fixed top-8 right-6 z-51 cursor-pointer group flex items-center gap-2 rounded-full bg-black hover:bg-neutral-800 text-white font-semibold px-4 py-2.5 shadow-2xl backdrop-blur-2xl transition-all duration-300 hover:scale-105 border border-neutral-700/80">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  <span class="text-xs sm:text-sm font-semibold">Download Resume</span>
+</a>
+<main class="flex min-h-screen flex-col">
+<div id="hero-section" class="relative flex min-h-screen flex-col items-center justify-center px-4 pb-10 md:pb-20">
+
+<!-- Background Watermark Text -->
+<div class="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center overflow-hidden">
+  <div class="hidden bg-gradient-to-b from-neutral-500/10 to-neutral-500/0 bg-clip-text text-[10rem] leading-none font-black text-transparent select-none sm:block lg:text-[16rem]" style="margin-bottom:-2.5rem">DHAVAL</div>
+</div>
+
+<!-- Header Branding -->
+<div class="z-1 mt-24 mb-8 flex flex-col items-center text-center md:mt-4 md:mb-12" style="opacity: 1; transform: none;">
+  
+  <h2 class="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">Hey, I'm Dhaval Umraliya 👋</h2>
+  <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">Senior iOS Developer</h1>
+  <p class="mt-2 text-sm md:text-base text-neutral-200 font-medium tracking-wide">Swift • SwiftUI • Scalable Mobile Architecture • 200K+ Users</p>
+</div>
+
+<!-- Hero Memoji -->
+<div class="relative z-10 flex items-center justify-center h-56 w-56 sm:h-76 sm:w-76">
+  <img alt="Hero memoji" class="w-full h-full object-contain drop-shadow-2xl transition-transform hover:scale-105" src="landing-memojis.png">
+</div>
+
+<!-- Search Input Form & 5 Interactive Buttons -->
+<div class="z-10 mt-4 flex w-full flex-col items-center justify-center md:px-0" style="opacity: 1; transform: none;">
+  <form id="search-form" class="relative w-full max-w-lg">
+    <div class="mx-auto flex items-center rounded-full border border-neutral-200 bg-white/30 py-2.5 pr-2 pl-6 backdrop-blur-lg transition-all hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600">
+      <input id="search-input" onclick="window.scrollToSection('section-contact'); return false;" type="text" placeholder="Let's Connect..." class="w-full border-none bg-transparent text-base text-neutral-800 placeholder:text-neutral-500 focus:outline-none dark:text-neutral-200 dark:placeholder:text-neutral-500" value="">
+      <button id="search-submit" onclick="window.scrollToSection('section-contact'); return false;" type="submit" aria-label="Submit question" class="flex items-center justify-center rounded-full bg-[#0171E3] p-2.5 text-white transition-colors hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-5 w-5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </form>
+
+    <div class="mt-4 grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3 md:grid-cols-5">
+    <button id="btn-me" onclick="window.scrollToSection('section-me'); return false;" style="position:relative; z-index:99; cursor:pointer;" data-slot="button" class="inline-flex flex-col items-center justify-center gap-2 text-sm font-medium transition-all cursor-pointer rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/40 dark:bg-neutral-800/60 p-4 sm:p-6 shadow-lg backdrop-blur-xl hover:scale-105 hover:bg-white/60 dark:hover:bg-neutral-700/80 active:scale-95 aspect-square w-full">
+      <div class="flex h-full flex-col items-center justify-center gap-1 text-gray-700 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#329696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laugh"><circle cx="12" cy="12" r="10"></circle><path d="M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5h12Z"></path><line x1="9" x2="9.01" y1="9" y2="9"></line><line x1="15" x2="15.01" y1="9" y2="9"></line></svg>
+        <span class="text-xs font-medium sm:text-sm">Me</span>
+      </div>
+    </button>
+    <button id="btn-skills" onclick="window.scrollToSection('section-skills'); return false;" style="position:relative; z-index:99; cursor:pointer;" data-slot="button" class="inline-flex flex-col items-center justify-center gap-2 text-sm font-medium transition-all cursor-pointer rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/40 dark:bg-neutral-800/60 p-4 sm:p-6 shadow-lg backdrop-blur-xl hover:scale-105 hover:bg-white/60 dark:hover:bg-neutral-700/80 active:scale-95 aspect-square w-full">
+      <div class="flex h-full flex-col items-center justify-center gap-1 text-gray-700 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#856ED9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
+        <span class="text-xs font-medium sm:text-sm">Skills</span>
+      </div>
+    </button>
+    <button id="btn-experience" onclick="window.scrollToSection('section-experience'); return false;" style="position:relative; z-index:99; cursor:pointer;" data-slot="button" class="inline-flex flex-col items-center justify-center gap-2 text-sm font-medium transition-all cursor-pointer rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/40 dark:bg-neutral-800/60 p-4 sm:p-6 shadow-lg backdrop-blur-xl hover:scale-105 hover:bg-white/60 dark:hover:bg-neutral-700/80 active:scale-95 aspect-square w-full">
+      <div class="flex h-full flex-col items-center justify-center gap-1 text-gray-700 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+        <span class="text-xs font-medium sm:text-sm">Experience</span>
+      </div>
+    </button>
+    <button id="btn-projects" onclick="window.scrollToSection('section-projects'); return false;" style="position:relative; z-index:99; cursor:pointer;" data-slot="button" class="inline-flex flex-col items-center justify-center gap-2 text-sm font-medium transition-all cursor-pointer rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/40 dark:bg-neutral-800/60 p-4 sm:p-6 shadow-lg backdrop-blur-xl hover:scale-105 hover:bg-white/60 dark:hover:bg-neutral-700/80 active:scale-95 aspect-square w-full">
+      <div class="flex h-full flex-col items-center justify-center gap-1 text-gray-700 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3E9858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase-business"><path d="M12 12h.01"></path><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path d="M22 13a18.15 18.15 0 0 1-20 0"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+        <span class="text-xs font-medium sm:text-sm">Projects</span>
+      </div>
+    </button>
+    <button id="btn-contact" onclick="window.scrollToSection('section-contact'); return false;" style="position:relative; z-index:99; cursor:pointer;" data-slot="button" class="inline-flex flex-col items-center justify-center gap-2 text-sm font-medium transition-all cursor-pointer rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/40 dark:bg-neutral-800/60 p-4 sm:p-6 shadow-lg backdrop-blur-xl hover:scale-105 hover:bg-white/60 dark:hover:bg-neutral-700/80 active:scale-95 aspect-square w-full">
+      <div class="flex h-full flex-col items-center justify-center gap-1 text-gray-700 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C19433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-search"><circle cx="10" cy="8" r="5"></circle><path d="M2 21a8 8 0 0 1 10.434-7.62"></path><circle cx="18" cy="18" r="3"></circle><path d="m22 22-1.9-1.9"></path></svg>
+        <span class="text-xs font-medium sm:text-sm">Contact</span>
+      </div>
+    </button>
+  </div>
+</div>
+
+<div class="fixed top-0 left-0 z-0 pointer-events-none">
+  <canvas id="fluid" class="h-screen w-screen" width="1467" height="871"></canvas>
+</div>
+</div>
+
+</main>
+
+
+
+    
+<!-- Beautiful Glassmorphism Scroll Showcase Section -->
+<div style="width: 100%; max-width: 72rem; margin-left: auto; margin-right: auto; padding: 3rem 2.5rem; position: relative; z-index: 1;">
+
+  <!-- SECTION 1: ABOUT ME (1 fold layout) -->
+  <section id="section-me" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+    <!-- Header -->
+    <div style="margin-bottom: 1.25rem;">
+        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">About Dhaval Umraliya</h2>
+        <p style="font-size: 0.875rem; font-weight: 600; color: #14b8a6; margin-top: 0.25rem;">Senior iOS Developer • 8+ Years Experience • Surat, Gujarat, India</p>
+    </div>
+
+    <!-- Professional Summary & Technical Mastery FIRST (above cards) -->
+    <div style="margin-bottom: 1.5rem;">
+      <div style="margin-bottom: 1rem;">
+        <h3 style="font-size: 1.15rem; font-weight: 700; color: #171717; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem;">
+          Professional Summary
+        </h3>
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #525252; font-weight: 500; margin: 0;">
+          Accomplished <strong style="color: #171717;">Senior iOS Developer &amp; Mobile Architect</strong> with <strong style="color: #14b8a6;">8+ years of experience</strong> engineering mission-critical iOS applications in <strong style="color: #171717;">Swift, SwiftUI &amp; Combine</strong>. Proven track record of scaling high-frequency mobile ecosystems to <strong style="color: #171717;">200,000+ active users</strong> with an industry-leading <strong style="color: #10b981;">99.18% crash-free rate</strong> across Southeast Asia.
+        </p>
+      </div>
+
+      <div>
+        <h3 style="font-size: 1.15rem; font-weight: 700; color: #171717; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem;">
+          Technical Mastery
+        </h3>
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #525252; font-weight: 500; margin: 0;">
+          Specialized in <strong style="color: #171717;">Clean Architecture (MVVM-C, VIPER), HealthKit &amp; Wearables BLE Sync, MapKit, Core Location</strong>, and 60FPS fluid UI micro-animations. Expert in automated CI/CD deployment pipelines with <strong style="color: #14b8a6;">Fastlane &amp; TestFlight</strong> for seamless, high-velocity releases.
+        </p>
+      </div>
+    </div>
+
+    <!-- Horizontal Metric Cards Row (4 columns, BELOW descriptions) -->
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="font-size: 1.75rem; font-weight: 900; color: #14b8a6;">8+ Yrs</div>
+        <div style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">iOS Architecture</div>
+      </div>
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="font-size: 1.75rem; font-weight: 900; color: #3b82f6;">200K+</div>
+        <div style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Active Users</div>
+      </div>
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="font-size: 1.75rem; font-weight: 900; color: #10b981;">99.18%</div>
+        <div style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Crash-Free Rate</div>
+      </div>
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="font-size: 1.75rem; font-weight: 900; color: #a855f7;">MVVM-C</div>
+        <div style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Clean Architecture</div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- SECTION 3: SKILLS -->
+  <section id="section-skills" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
+    <div style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Skills & Technical Stack</h2>
+        <p class="text-sm font-semibold text-purple-500 dark:text-purple-400 mt-0.5">iOS Languages, Frameworks, Architecture & Tools</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <h3 style="font-size: 1.1rem; font-weight: 800; color: #9333ea; margin-top: 0; margin-bottom: 1rem;">
+          Languages & Core Frameworks
+        </h3>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.875rem; font-weight: 600; color: #374151;">
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Swift & SwiftUI</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>UIKit & AutoLayout</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Combine Reactive Framework</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>CoreData & Realm</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>HealthKit & CoreBluetooth</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Objective-C</li>
+        </ul>
+      </div>
+
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <h3 style="font-size: 1.1rem; font-weight: 800; color: #9333ea; margin-top: 0; margin-bottom: 1rem;">
+          Architecture & Engineering
+        </h3>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.875rem; font-weight: 600; color: #374151;">
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>MVVM-C (Coordinator Pattern)</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>VIPER / Clean Architecture</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Dependency Injection</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Async/Await & Structured Concurrency</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Protocol-Oriented Programming</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Memory Optimization & ARC</li>
+        </ul>
+      </div>
+
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <h3 style="font-size: 1.1rem; font-weight: 800; color: #9333ea; margin-top: 0; margin-bottom: 1rem;">
+          Tools, Testing & CI/CD
+        </h3>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.875rem; font-weight: 600; color: #374151;">
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Xcode, Instruments & Leaks</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Swift Package Manager & CocoaPods</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Fastlane & TestFlight Automation</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Firebase Crashlytics & Analytics</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>Git, GitHub Actions & CI/CD</li>
+          <li style="display: flex; align-items: center; gap: 0.5rem;"><span style="height: 6px; width: 6px; border-radius: 9999px; background: #a855f7;"></span>XCTest & Unit Testing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1.5: WORK EXPERIENCE (Executive Refined Timeline from Resume) -->
+  <section id="section-experience" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 3.5rem;">
+    <div style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Work Experience</h2>
+        <p class="text-sm font-semibold text-teal-600 dark:text-teal-400 mt-0.5">8+ Years Career Journey &amp; Engineering Experience</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <!-- Role 1: LivWell -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+          <div>
+            <h3 style="font-size: 1.2rem; font-weight: 800; color: #171717; margin: 0;">Senior iOS Developer • LivWell Private Limited</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #0d9488; margin-top: 0.15rem;">B2B InsurTech &amp; Health Ecosystem • Full-time</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(20,184,166,0.15); padding: 0.25rem 0.75rem; font-size: 0.725rem; font-weight: 700; color: #0d9488; border: 1px solid rgba(20,184,166,0.25); white-space: nowrap;">Aug 2022 – Present</span>
+        </div>
+        <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.825rem; color: #525252; font-weight: 500; line-height: 1.5; display: flex; flex-direction: column; gap: 0.25rem;">
+          <li>Architected enterprise InsurTech &amp; wellness mobile ecosystem deployed across SEA using <strong>SwiftUI, Combine, and Firebase</strong>.</li>
+          <li>Engineered real-time HealthKit tracking and custom BLE integration for <strong>Co-Fit, HRY Fine, and CRP Band smart wearables</strong>.</li>
+          <li>Spearheaded automated CI/CD pipelines via <strong>Fastlane &amp; TestFlight</strong>, maintaining <strong>200K+ active users &amp; 99.18% crash-free rate</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Role 2: Purelogic Labs -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+          <div>
+            <h3 style="font-size: 1.2rem; font-weight: 800; color: #171717; margin: 0;">Senior iOS Developer • Purelogic Labs (AQI.com)</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #2563eb; margin-top: 0.15rem;">Environmental Monitoring &amp; Live Data Analytics • Full-time</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(59,130,246,0.15); padding: 0.25rem 0.75rem; font-size: 0.725rem; font-weight: 700; color: #2563eb; border: 1px solid rgba(59,130,246,0.25); white-space: nowrap;">Mar 2021 – Aug 2022</span>
+        </div>
+        <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.825rem; color: #525252; font-weight: 500; line-height: 1.5; display: flex; flex-direction: column; gap: 0.25rem;">
+          <li>Developed high-concurrency global air quality monitoring app with real-time pollution data visualization &amp; interactive charts.</li>
+          <li>Optimized <strong>Core Location, MapKit heat map overlays, and Firebase Realtime DB</strong> for immediate toxic AQI threshold alerts.</li>
+          <li>Managed App Store releases, user feedback iteration cycles, and UI rendering performance at 60FPS.</li>
+        </ul>
+      </div>
+
+      <!-- Grid for Roles 3, 4, 5 -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+        <!-- Role 3: Narola Infotech -->
+        <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+            <h4 style="font-size: 1rem; font-weight: 800; color: #171717; margin: 0;">iOS Developer</h4>
+            <span style="font-size: 0.68rem; font-weight: 700; color: #78350f; background: rgba(245,158,11,0.15); padding: 0.15rem 0.5rem; border-radius: 9999px; border: 1px solid rgba(245,158,11,0.25);">Oct 2019 – Feb 2021</span>
+          </div>
+          <p style="font-size: 0.75rem; font-weight: 700; color: #d97706; margin-top: 0.1rem; margin-bottom: 0.4rem;">Narola Infotech</p>
+          <p style="font-size: 0.775rem; line-height: 1.45; color: #525252; font-weight: 500; margin: 0;">
+            Shipped 8+ commercial iOS apps across fintech, healthcare, and Ed-Tech. Integrated RESTful APIs, StoreKit in-app purchases, push notifications, and mentored interns in Agile workflows.
+          </p>
+        </div>
+
+        <!-- Role 4: White Orange Software -->
+        <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+            <h4 style="font-size: 1rem; font-weight: 800; color: #171717; margin: 0;">iOS Developer</h4>
+            <span style="font-size: 0.68rem; font-weight: 700; color: #6b21a8; background: rgba(168,85,247,0.15); padding: 0.15rem 0.5rem; border-radius: 9999px; border: 1px solid rgba(168,85,247,0.25);">Apr 2018 – May 2019</span>
+          </div>
+          <p style="font-size: 0.75rem; font-weight: 700; color: #9333ea; margin-top: 0.1rem; margin-bottom: 0.4rem;">White Orange Software</p>
+          <p style="font-size: 0.775rem; line-height: 1.45; color: #525252; font-weight: 500; margin: 0;">
+            Engineered high-reliability productivity apps with localized UI. Honored with Certificate of Excellence for crash rate reduction and ARC memory leak resolution.
+          </p>
+        </div>
+
+        <!-- Role 5: Tops Technologies Intern -->
+        <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+            <h4 style="font-size: 1rem; font-weight: 800; color: #171717; margin: 0;">iOS Developer Intern</h4>
+            <span style="font-size: 0.68rem; font-weight: 700; color: #0369a1; background: rgba(14,165,233,0.15); padding: 0.15rem 0.5rem; border-radius: 9999px; border: 1px solid rgba(14,165,233,0.25);">6-Month Internship</span>
+          </div>
+          <p style="font-size: 0.75rem; font-weight: 700; color: #0284c7; margin-top: 0.1rem; margin-bottom: 0.4rem;">Tops Technologies</p>
+          <p style="font-size: 0.775rem; line-height: 1.45; color: #525252; font-weight: 500; margin: 0;">
+            Established strong iOS engineering foundation in Swift, Objective-C &amp; Cocoa Touch frameworks. Built mini-apps and executed automated &amp; manual QA testing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PROJECTS (All Resume Projects in Beautiful Glassmorphism Grid) -->
+  <section id="section-projects" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 3rem;">
+    <div style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Featured Projects</h2>
+        <p class="text-sm font-semibold text-emerald-500 dark:text-emerald-400 mt-0.5">8 Production iOS Applications &amp; Mobile Architectures from Resume</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+      <!-- Project 1: LivWell Asia -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">LivWell Asia – InsurTech &amp; Health Platform</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem;">Senior iOS Developer • Aug 2022 – Present • B2B InsurTech</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(16,185,129,0.15); padding: 0.2rem 0.65rem; font-size: 0.7rem; font-weight: 700; color: #059669; border: 1px solid rgba(16,185,129,0.25); white-space: nowrap;">200K+ Users • 99.18% Crash-Free</span>
+        </div>
+        <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin-bottom: 0.6rem;">
+          Next-gen InsurTech &amp; employee wellness ecosystem across SEA. Integrates AI-powered vital health scans, LW Coin rewards, real-time wearable BLE sync (Co-Fit, CRP Band, HRY Fine), digital insurance claims, and teleconsultation doctor bookings.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="border-radius: 0.4rem; background: rgba(16,185,129,0.1); color: #047857; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(16,185,129,0.2);">SwiftUI</span>
+          <span style="border-radius: 0.4rem; background: rgba(16,185,129,0.1); color: #047857; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(16,185,129,0.2);">AI Vital Scan</span>
+          <span style="border-radius: 0.4rem; background: rgba(16,185,129,0.1); color: #047857; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(16,185,129,0.2);">HealthKit</span>
+          <span style="border-radius: 0.4rem; background: rgba(16,185,129,0.1); color: #047857; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(16,185,129,0.2);">BLE Wearables</span>
+          <span style="border-radius: 0.4rem; background: rgba(16,185,129,0.1); color: #047857; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(16,185,129,0.2);">LW Coins Rewards</span>
+          <span style="border-radius: 0.4rem; background: rgba(16,185,129,0.1); color: #047857; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(16,185,129,0.2);">Fastlane</span>
+        </div>
+      </div>
+
+      <!-- Project 2: AQI.com -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">AQI.com – Air Quality Monitor</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem;">Senior iOS Developer • Mar 2021 – Aug 2022</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(59,130,246,0.15); padding: 0.2rem 0.65rem; font-size: 0.7rem; font-weight: 700; color: #2563eb; border: 1px solid rgba(59,130,246,0.25); white-space: nowrap;">Live Map &amp; Charts</span>
+        </div>
+        <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin-bottom: 0.6rem;">
+          Real-time global air quality monitoring app. Continuous location updates with Core Location, MapKit heat map overlays, push alerts for toxic AQI, and interactive charts.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="border-radius: 0.4rem; background: rgba(59,130,246,0.1); color: #1d4ed8; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(59,130,246,0.2);">Swift</span>
+          <span style="border-radius: 0.4rem; background: rgba(59,130,246,0.1); color: #1d4ed8; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(59,130,246,0.2);">CoreLocation</span>
+          <span style="border-radius: 0.4rem; background: rgba(59,130,246,0.1); color: #1d4ed8; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(59,130,246,0.2);">MapKit</span>
+          <span style="border-radius: 0.4rem; background: rgba(59,130,246,0.1); color: #1d4ed8; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(59,130,246,0.2);">Charts</span>
+        </div>
+      </div>
+
+      <!-- Project 3: Pebble Smartwatch Utility -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">Pebble – Smartwatch Companion</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem;">iOS Developer • Modular Wearable Architecture</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(168,85,247,0.15); padding: 0.2rem 0.65rem; font-size: 0.7rem; font-weight: 700; color: #7e22ce; border: 1px solid rgba(168,85,247,0.25); white-space: nowrap;">HRY Fine &amp; FitCloud</span>
+        </div>
+        <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin-bottom: 0.6rem;">
+          Custom smartwatch utility app enabling sticker sharing via iMessage &amp; WhatsApp. Integrated third-party wearable SDKs (HRY Fine, Fit Cloud Pro) into modular architecture.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="border-radius: 0.4rem; background: rgba(168,85,247,0.1); color: #6b21a8; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(168,85,247,0.2);">Swift</span>
+          <span style="border-radius: 0.4rem; background: rgba(168,85,247,0.1); color: #6b21a8; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(168,85,247,0.2);">Modular SDKs</span>
+          <span style="border-radius: 0.4rem; background: rgba(168,85,247,0.1); color: #6b21a8; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(168,85,247,0.2);">iMessage Extension</span>
+        </div>
+      </div>
+
+      <!-- Project 4: Spellex Medical Keyboard -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">Spellex – Medical Keyboard Tool</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem;">iOS Developer • Healthcare Tech</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(14,165,233,0.15); padding: 0.2rem 0.65rem; font-size: 0.7rem; font-weight: 700; color: #0284c7; border: 1px solid rgba(14,165,233,0.25); white-space: nowrap;">500K+ Medical Terms</span>
+        </div>
+        <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin-bottom: 0.6rem;">
+          Specialized custom iOS keyboard with 500,000+ medical terms for healthcare professionals. Built multi-threaded real-time text processing engine for ultra-fast input.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="border-radius: 0.4rem; background: rgba(14,165,233,0.1); color: #0369a1; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(14,165,233,0.2);">Swift</span>
+          <span style="border-radius: 0.4rem; background: rgba(14,165,233,0.1); color: #0369a1; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(14,165,233,0.2);">Multi-Threading</span>
+          <span style="border-radius: 0.4rem; background: rgba(14,165,233,0.1); color: #0369a1; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(14,165,233,0.2);">Custom Keyboard</span>
+        </div>
+      </div>
+
+      <!-- Project 5: Stage Live Streaming -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">Stage – Live Streaming Platform</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem;">iOS Developer • Media &amp; Entertainment</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(239,68,68,0.15); padding: 0.2rem 0.65rem; font-size: 0.7rem; font-weight: 700; color: #dc2626; border: 1px solid rgba(239,68,68,0.25); white-space: nowrap;">Live Video &amp; Chat</span>
+        </div>
+        <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin-bottom: 0.6rem;">
+          Engineered high-concurrency live video &amp; chat module for influencers. Enabled real-time interactive audience engagement using OpenTok &amp; Socket.IO.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="border-radius: 0.4rem; background: rgba(239,68,68,0.1); color: #b91c1c; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(239,68,68,0.2);">Swift</span>
+          <span style="border-radius: 0.4rem; background: rgba(239,68,68,0.1); color: #b91c1c; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(239,68,68,0.2);">OpenTok</span>
+          <span style="border-radius: 0.4rem; background: rgba(239,68,68,0.1); color: #b91c1c; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(239,68,68,0.2);">Socket.IO</span>
+        </div>
+      </div>
+
+      <!-- Project 6: TOKE Classified Listing App -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">TOKE – Classified Listing App</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem;">iOS Developer • E-Commerce &amp; Social</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(245,158,11,0.15); padding: 0.2rem 0.65rem; font-size: 0.7rem; font-weight: 700; color: #d97706; border: 1px solid rgba(245,158,11,0.25); white-space: nowrap;">In-App Purchases</span>
+        </div>
+        <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin-bottom: 0.6rem;">
+          Classified marketplace application featuring secure in-app purchases, offline messaging capabilities, and modular UI component architecture.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="border-radius: 0.4rem; background: rgba(245,158,11,0.1); color: #b45309; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(245,158,11,0.2);">Swift</span>
+          <span style="border-radius: 0.4rem; background: rgba(245,158,11,0.1); color: #b45309; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(245,158,11,0.2);">Offline Storage</span>
+          <span style="border-radius: 0.4rem; background: rgba(245,158,11,0.1); color: #b45309; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(245,158,11,0.2);">In-App Purchase</span>
+        </div>
+      </div>
+
+      <!-- Project 7: Mixie Private Social Club -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">Mixie – Private Social Club App</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem;">iOS Developer • Events &amp; FinTech</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(236,72,153,0.15); padding: 0.2rem 0.65rem; font-size: 0.7rem; font-weight: 700; color: #db2777; border: 1px solid rgba(236,72,153,0.25); white-space: nowrap;">Apple Pay Integration</span>
+        </div>
+        <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin-bottom: 0.6rem;">
+          Private club membership application with encrypted event curation system, role-based process workflow, and seamless Apple Pay integration.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="border-radius: 0.4rem; background: rgba(236,72,153,0.1); color: #be185d; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(236,72,153,0.2);">Swift</span>
+          <span style="border-radius: 0.4rem; background: rgba(236,72,153,0.1); color: #be185d; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(236,72,153,0.2);">Apple Pay</span>
+          <span style="border-radius: 0.4rem; background: rgba(236,72,153,0.1); color: #be185d; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(236,72,153,0.2);">Encrypted DB</span>
+        </div>
+      </div>
+
+      <!-- Project 8: Intermission Sports Fan App -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">Intermission – Sports Fan App</h3>
+            <p style="font-size: 0.75rem; font-weight: 600; color: #737373; margin-top: 0.15rem;">iOS Developer • Sports &amp; Gaming</p>
+          </div>
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(99,102,241,0.15); padding: 0.2rem 0.65rem; font-size: 0.7rem; font-weight: 700; color: #4f46e5; border: 1px solid rgba(99,102,241,0.25); white-space: nowrap;">Real-Time Sync</span>
+        </div>
+        <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin-bottom: 0.6rem;">
+          Sports fan engagement app built with real-time live polls, interactive mini-games, and Firebase real-time database synchronization for match updates.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+          <span style="border-radius: 0.4rem; background: rgba(99,102,241,0.1); color: #4338ca; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(99,102,241,0.2);">Objective-C</span>
+          <span style="border-radius: 0.4rem; background: rgba(99,102,241,0.1); color: #4338ca; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(99,102,241,0.2);">Firebase Sync</span>
+          <span style="border-radius: 0.4rem; background: rgba(99,102,241,0.1); color: #4338ca; padding: 0.15rem 0.5rem; font-size: 0.68rem; font-weight: 600; border: 1px solid rgba(99,102,241,0.2);">Live Polls</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- SECTION 4: EDUCATION -->
+  <section id="section-education" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
+    <div style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Education & Academic Background</h2>
+        <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mt-0.5">Degrees, Qualifications &amp; Academic Distinction</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+      <!-- Degree 1: BCA -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">BCA – Bachelor of Computer Applications</h3>
+          <p style="font-size: 0.75rem; font-weight: 600; color: #0284c7; margin-top: 0.2rem; margin-bottom: 0.6rem;">Veer Narmad South Gujarat University • Graduated 2016</p>
+          <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin: 0;">
+            Specialized in Computer Science, Software Engineering, Data Structures &amp; Object-Oriented Programming principles. Awarded Best Web App Developer at Inter BCA 2016.
+          </p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(14,165,233,0.15); padding: 0.25rem 0.75rem; font-size: 0.7rem; font-weight: 700; color: #0369a1; border: 1px solid rgba(14,165,233,0.25); white-space: nowrap;">First Class with Distinction</span>
+        </div>
+      </div>
+
+      <!-- School 2: HSC -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">HSC – Higher Secondary Certificate</h3>
+          <p style="font-size: 0.75rem; font-weight: 600; color: #0d9488; margin-top: 0.2rem; margin-bottom: 0.6rem;">Sadhana Vidhyalaya, Surat • Completed 2011</p>
+          <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin: 0;">
+            Focused on Science, Mathematics, and Computer Fundamentals. Built strong analytical, problem-solving, and logical reasoning skills.
+          </p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(20,184,166,0.15); padding: 0.25rem 0.75rem; font-size: 0.7rem; font-weight: 700; color: #0f766e; border: 1px solid rgba(20,184,166,0.25); white-space: nowrap;">First Class</span>
+        </div>
+      </div>
+
+      <!-- School 3: SSC -->
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <h3 style="font-size: 1.15rem; font-weight: 800; color: #171717; margin: 0;">SSC – Secondary School Certificate</h3>
+          <p style="font-size: 0.75rem; font-weight: 600; color: #7c3aed; margin-top: 0.2rem; margin-bottom: 0.6rem;">NAVCHETAN Vidhyalaya, Surat • Completed 2013</p>
+          <p style="font-size: 0.825rem; line-height: 1.5; color: #525252; font-weight: 500; margin: 0;">
+            General Secondary Education with distinction in Mathematics and Science. Participated in regional technical quizzes and competitions.
+          </p>
+        </div>
+        <div style="margin-top: 1.25rem;">
+          <span style="display: inline-flex; align-items: center; border-radius: 9999px; background: rgba(124,58,237,0.15); padding: 0.25rem 0.75rem; font-size: 0.7rem; font-weight: 700; color: #6d28d9; border: 1px solid rgba(124,58,237,0.25); white-space: nowrap;">First Class</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- SECTION 5: CONTACT -->
+  <section id="section-contact" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
+    <div style="margin-bottom: 1.5rem;">
+        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Let's Connect</h2>
+        <p class="text-sm font-semibold text-amber-500 dark:text-amber-400 mt-0.5">Get in touch for Senior iOS Opportunities & Collaborations</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+      <a href="mailto:dhavalumraliya777@gmail.com" style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; text-align: center; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.2s;">
+        <span style="font-size: 2.25rem; margin-bottom: 0.5rem;">📧</span>
+        <h4 style="font-size: 1.1rem; font-weight: 800; color: #171717; margin: 0;">Direct Email</h4>
+        <p style="font-size: 0.8rem; font-weight: 600; color: #d97706; margin-top: 0.3rem;">dhavalumraliya777@gmail.com</p>
+      </a>
+
+      <a href="tel:+918401513185" style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; text-align: center; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.2s;">
+        <span style="font-size: 2.25rem; margin-bottom: 0.5rem;">📞</span>
+        <h4 style="font-size: 1.1rem; font-weight: 800; color: #171717; margin: 0;">Phone Call</h4>
+        <p style="font-size: 0.8rem; font-weight: 600; color: #d97706; margin-top: 0.3rem;">+91 84015 13185</p>
+      </a>
+
+      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; text-align: center; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <span style="font-size: 2.25rem; margin-bottom: 0.5rem;">📍</span>
+        <h4 style="font-size: 1.1rem; font-weight: 800; color: #171717; margin: 0;">Location</h4>
+        <p style="font-size: 0.8rem; font-weight: 600; color: #525252; margin-top: 0.3rem;">Surat, Gujarat, India</p>
+      </div>
+    </div>
+
+    <!-- Premium Modern Download Resume Button -->
+    <div style="margin-top: 2.5rem; display: flex; justify-content: center;">
+      <a href="Dhaval_Umraliya_Resume.pdf" download="Dhaval_Umraliya_Resume.pdf" style="display: inline-flex; align-items: center; gap: 0.75rem; border-radius: 9999px; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; font-weight: 800; font-size: 1rem; padding: 1rem 2.25rem; text-decoration: none; box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.15) inset; transition: all 0.3s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: #38bdf8;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Download Full Resume PDF</span>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+
+
+<!-- Glassmorphism Interactive Modal Popup Overlay -->
+<div id="resume-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-xl transition-all duration-300 opacity-0">
+  <div id="modal-card" class="relative w-full max-w-lg bg-[#161b22] text-white shadow-2xl border border-neutral-700 border border-neutral-700/80 rounded-3xl p-6 shadow-2xl text-white transform scale-95 transition-all duration-300">
+    <button id="modal-close" class="absolute top-4 right-4 text-neutral-300 font-medium hover:text-white bg-neutral-800/80 rounded-full p-2 hover:bg-neutral-700 transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <div id="modal-header" class="mb-4 pr-8">
+      <h3 id="modal-title" class="text-2xl font-bold text-white"></h3>
+      <p id="modal-subtitle" class="text-xs text-blue-400 font-semibold mt-1"></p>
+    </div>
+    <div id="modal-body" class="text-sm"></div>
+  </div>
+</div>
+
+
+<script src="js/inline_scripts.js"></script>
+
+<script>
+(function() {
+  const RESUME_DATA = {
+    me: {
+      title: "About Dhaval Umraliya",
+      subtitle: "Senior iOS Developer • 8+ Years Experience",
+      content: `
+        <div class="space-y-4">
+          <p class="text-neutral-200 leading-relaxed text-sm">
+            Product-driven <strong>Senior iOS Developer</strong> with 8+ years of experience building scalable, intuitive, and high-performance mobile apps. Specialized in <strong>Swift, SwiftUI</strong>, Clean Architecture (MVVM-C, VIPER), and high-frequency SDK integrations.
+          </p>
+          <div class="grid grid-cols-2 gap-3 my-3">
+            <div class="bg-white/10 rounded-xl p-3 border border-white/10 text-center">
+              <div class="text-xl font-bold text-blue-400">8+ Yrs</div>
+              <div class="text-xs text-neutral-200 font-medium">iOS Development</div>
+            </div>
+            <div class="bg-white/10 rounded-xl p-3 border border-white/10 text-center">
+              <div class="text-xl font-bold text-emerald-400">200K+</div>
+              <div class="text-xs text-neutral-200 font-medium">App Users</div>
+            </div>
+            <div class="bg-white/10 rounded-xl p-3 border border-white/10 text-center">
+              <div class="text-xl font-bold text-purple-400">99%+</div>
+              <div class="text-xs text-neutral-200 font-medium">Crash-Free Rate</div>
+            </div>
+            <div class="bg-white/10 rounded-xl p-3 border border-white/10 text-center">
+              <div class="text-xl font-bold text-pink-400">8+ Apps</div>
+              <div class="text-xs text-neutral-200 font-medium">App Store Shipped</div>
+            </div>
+          </div>
+          <p class="text-neutral-200 font-medium text-xs leading-relaxed">
+            Comfortable owning features end-to-end—from design and development to deployment. Excels in startup-paced teams shipping fast without compromising code quality.
+          </p>
+          <div class="pt-2 text-xs text-neutral-300 font-medium flex items-center gap-1">
+            📍 <span>Surat, Gujarat, India • Open to Relocation & Remote Roles</span>
+          </div>
+        </div>
+      `
+    },
+    projects: {
+      title: "Key Projects & Contributions",
+      subtitle: "High-Impact Mobile Applications",
+      content: `
+        <div class="space-y-3 max-h-[55vh] overflow-y-auto pr-1">
+          <div class="bg-white/10 rounded-xl p-3.5 border border-white/10">
+            <div class="flex justify-between items-start">
+              <h4 class="text-sm font-bold text-white">LivWell – Fintech & Wellness App</h4>
+              <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full border border-blue-500/30">Aug 2022 – Present</span>
+            </div>
+            <p class="text-[11px] text-blue-200 mt-0.5 font-medium">Tech: SwiftUI, Firebase, Wearable SDKs (Co-Fit, CRP Band, HRY Fine)</p>
+            <ul class="list-disc list-inside text-xs text-neutral-200 font-medium mt-1.5 space-y-0.5">
+              <li>200K+ downloads with 99.18% crash-free sessions across SEA markets.</li>
+              <li>Integrated Co-Fit, HRY Fine, CRP Band SDKs for real-time health tracking.</li>
+              <li>Led deployment with CI/CD using Fastlane & TestFlight (2K+ DAUs).</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/10 rounded-xl p-3.5 border border-white/10">
+            <div class="flex justify-between items-start">
+              <h4 class="text-sm font-bold text-white">AQI.com – Air Quality Monitor</h4>
+              <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-500/30">Mar 2021 – Aug 2022</span>
+            </div>
+            <p class="text-[11px] text-emerald-200 mt-0.5 font-medium">Tech: Swift, Core Location, MapKit, Firebase Realtime DB, Charts</p>
+            <ul class="list-disc list-inside text-xs text-neutral-200 font-medium mt-1.5 space-y-0.5">
+              <li>Built AQI air quality monitoring app with real-time data visualization.</li>
+              <li>Managed App Store release, user feedback iterations, and maps.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/10 rounded-xl p-3.5 border border-white/10">
+            <div class="flex justify-between items-start">
+              <h4 class="text-sm font-bold text-white">Pebble | Smartwatch Utility App</h4>
+              <span class="text-[10px] bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded-full border border-purple-500/30">Utility</span>
+            </div>
+            <p class="text-[11px] text-purple-200 mt-0.5 font-medium">Tech: Swift, Modular SDKs (HRY Fine, FIT Cloud Pro)</p>
+            <ul class="list-disc list-inside text-xs text-neutral-200 font-medium mt-1.5 space-y-0.5">
+              <li>Custom sticker sharing via Messages/WhatsApp, enhancing engagement.</li>
+              <li>Integrated wearable SDKs with modular architecture.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/10 rounded-xl p-3.5 border border-white/10">
+            <div class="flex justify-between items-start">
+              <h4 class="text-sm font-bold text-white">Spell ex Medical Keyboard</h4>
+              <span class="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/30">Healthcare</span>
+            </div>
+            <p class="text-[11px] text-amber-200 mt-0.5 font-medium">Tech: Swift, Multi-threading</p>
+            <ul class="list-disc list-inside text-xs text-neutral-200 font-medium mt-1.5 space-y-0.5">
+              <li>Custom keyboard with 500K+ medical terms for healthcare professionals.</li>
+              <li>Multi-threaded real-time text processing improving input speed.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/10 rounded-xl p-3.5 border border-white/10">
+            <div class="flex justify-between items-start">
+              <h4 class="text-sm font-bold text-white">Stage | Live Streaming App</h4>
+              <span class="text-[10px] bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded-full border border-pink-500/30">Media</span>
+            </div>
+            <p class="text-[11px] text-pink-200 mt-0.5 font-medium">Tech: Swift, OpenTok, Socket.IO</p>
+            <ul class="list-disc list-inside text-xs text-neutral-200 font-medium mt-1.5 space-y-0.5">
+              <li>Engineered live video & chat module for influencers.</li>
+              <li>Enabled real-time interactions boosting average session time.</li>
+            </ul>
+          </div>
+        </div>
+      `
+    },
+    skills: {
+      title: "Tech Stack & Core Skills",
+      subtitle: "Mobile Architecture & iOS Engineering",
+      content: `
+        <div class="space-y-3.5">
+          <div>
+            <h4 class="text-[11px] font-semibold text-neutral-300 font-medium uppercase tracking-wider mb-1.5">Languages & Frameworks</h4>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Swift</span>
+              <span class="bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">SwiftUI</span>
+              <span class="bg-neutral-500/20 text-neutral-200 font-medium border border-neutral-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Objective-C</span>
+              <span class="bg-yellow-500/20 text-yellow-300 border border-yellow-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">JavaScript</span>
+              <span class="bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">UIKit</span>
+              <span class="bg-purple-500/20 text-purple-300 border border-purple-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Combine</span>
+              <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">MapKit</span>
+              <span class="bg-red-500/20 text-red-300 border border-red-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">AVFoundation</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-[11px] font-semibold text-neutral-300 font-medium uppercase tracking-wider mb-1.5">Architecture & Design</h4>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">MVVM</span>
+              <span class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Clean Architecture</span>
+              <span class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">MVC</span>
+              <span class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Modular Design</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-[11px] font-semibold text-neutral-300 font-medium uppercase tracking-wider mb-1.5">APIs, Wearables & Cloud</h4>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Firebase</span>
+              <span class="bg-pink-500/20 text-pink-300 border border-pink-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Apple HealthKit</span>
+              <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Wearable SDKs (Co-Fit, CRP Band)</span>
+              <span class="bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">REST APIs</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-[11px] font-semibold text-neutral-300 font-medium uppercase tracking-wider mb-1.5">CI/CD & Testing</h4>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-rose-500/20 text-rose-300 border border-rose-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Fastlane</span>
+              <span class="bg-slate-500/20 text-slate-300 border border-slate-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">GitHub Actions</span>
+              <span class="bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">App Store Connect</span>
+              <span class="bg-green-500/20 text-green-300 border border-green-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">XCTest / XCUITest</span>
+              <span class="bg-red-500/20 text-red-300 border border-red-500/30 px-2.5 py-0.5 rounded-full text-xs font-medium">Crashlytics</span>
+            </div>
+          </div>
+        </div>
+      `
+    },
+    fun: {
+      title: "Achievements & Recognition",
+      subtitle: "Awards & Honors",
+      content: `
+        <div class="space-y-2.5">
+          <div class="bg-white/10 rounded-xl p-3 border border-white/10 flex items-center gap-3">
+            <div class="text-xl">🏆</div>
+            <div>
+              <div class="font-bold text-white text-xs">Best Web App Developer</div>
+              <div class="text-[11px] text-neutral-200 font-medium">Inter BCA 2016</div>
+            </div>
+          </div>
+          <div class="bg-white/10 rounded-xl p-3 border border-white/10 flex items-center gap-3">
+            <div class="text-xl">🌟</div>
+            <div>
+              <div class="font-bold text-white text-xs">Certificate of Excellence</div>
+              <div class="text-[11px] text-neutral-200 font-medium">White Orange Software</div>
+            </div>
+          </div>
+          <div class="bg-white/10 rounded-xl p-3 border border-white/10 flex items-center gap-3">
+            <div class="text-xl">🚨</div>
+            <div>
+              <div class="font-bold text-white text-xs">AppleFest 2016 Winner</div>
+              <div class="text-[11px] text-neutral-200 font-medium">Emergency Alert System</div>
+            </div>
+          </div>
+          <div class="bg-white/10 rounded-xl p-3 border border-white/10 flex items-center gap-3">
+            <div class="text-xl">🗺️</div>
+            <div>
+              <div class="font-bold text-white text-xs">Spandan 2017</div>
+              <div class="text-[11px] text-neutral-200 font-medium">Tourism Assistant App</div>
+            </div>
+          </div>
+          <div class="bg-white/10 rounded-xl p-3 border border-white/10 flex items-center gap-3">
+            <div class="text-xl">♻️</div>
+            <div>
+              <div class="font-bold text-white text-xs">Pest-IT 2016</div>
+              <div class="text-[11px] text-neutral-200 font-medium">Smart Waste Management App</div>
+            </div>
+          </div>
+        </div>
+      `
+    },
+    contact: {
+      title: "Contact Dhaval Umraliya",
+      subtitle: "Let's Connect & Collaborate",
+      content: `
+        <div class="space-y-3">
+          <div class="bg-white/10 rounded-2xl p-4 border border-white/10 space-y-2.5">
+            <div class="flex items-center gap-3 text-neutral-200">
+              <span class="text-lg">📧</span>
+              <div>
+                <div class="text-[10px] text-neutral-300 font-medium font-medium">Email</div>
+                <a href="mailto:dhavalumraliya777@gmail.com" class="text-xs font-semibold text-blue-400 hover:underline">dhavalumraliya777@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 text-neutral-200">
+              <span class="text-lg">📞</span>
+              <div>
+                <div class="text-[10px] text-neutral-300 font-medium font-medium">Phone</div>
+                <a href="tel:+918401513185" class="text-xs font-semibold text-emerald-400 hover:underline">+91 84015 13185</a>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 text-neutral-200">
+              <span class="text-lg">📍</span>
+              <div>
+                <div class="text-[10px] text-neutral-300 font-medium font-medium">Location</div>
+                <span class="text-xs font-semibold text-white">Surat, Gujarat, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2.5 pt-1">
+            <a href="mailto:dhavalumraliya777@gmail.com" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium text-center py-2 rounded-xl text-xs transition-colors text-center">Send Email</a>
+            <a href="tel:+918401513185" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-center py-2 rounded-xl text-xs transition-colors text-center">Call Now</a>
+          </div>
+        </div>
+      `
+    }
+  };
+
+  const modal = document.getElementById('resume-modal');
+  const modalCard = document.getElementById('modal-card');
+  const modalClose = document.getElementById('modal-close');
+  const modalTitle = document.getElementById('modal-title');
+  const modalSubtitle = document.getElementById('modal-subtitle');
+  const modalBody = document.getElementById('modal-body');
+
+  function openModal(key) {
+    const data = RESUME_DATA[key] || RESUME_DATA.me;
+    modalTitle.textContent = data.title;
+    modalSubtitle.textContent = data.subtitle;
+    modalBody.innerHTML = data.content;
+
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      modal.classList.remove('opacity-0');
+      modalCard.classList.remove('scale-95');
+    }, 10);
+  }
+
+  function closeModal() {
+    modal.classList.add('opacity-0');
+    modalCard.classList.add('scale-95');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300);
+  }
+
+  
+  // Open Contact Us modal when clicking or submitting Let's Connect search bar
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) {
+    searchInput.addEventListener('click', function(e) {
+      e.preventDefault();
+      openModal('contact');
+    });
+    searchInput.addEventListener('focus', function(e) {
+      e.preventDefault();
+      openModal('contact');
+    });
+  }
+
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) closeModal();
+    });
+  }
+
+  // Attach handlers to logo button & 5 category buttons
+  const logoBtn = document.getElementById('logo-btn');
+  if (logoBtn) logoBtn.addEventListener('click', () => openModal('me'));
+
+  const btnMe = document.getElementById('btn-me');
+  if (btnMe) btnMe.addEventListener('click', () => openModal('me'));
+
+  const btnProjects = document.getElementById('btn-projects');
+  if (btnProjects) btnProjects.addEventListener('click', () => openModal('projects'));
+
+  const btnSkills = document.getElementById('btn-skills');
+  if (btnSkills) btnSkills.addEventListener('click', () => openModal('skills'));
+
+  const btnFun = document.getElementById('btn-fun');
+  if (btnFun) btnFun.addEventListener('click', () => openModal('fun'));
+
+  const btnContact = document.getElementById('btn-contact');
+  if (btnContact) btnContact.addEventListener('click', () => openModal('contact'));
+
+  // Search input handler
+  const form = document.getElementById('search-form');
+  const input = document.getElementById('search-input');
+  if (form && input) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const q = input.value.trim().toLowerCase();
+      if (!q) return;
+      if (q.includes('project') || q.includes('work') || q.includes('app') || q.includes('livwell')) {
+        openModal('projects');
+      } else if (q.includes('skill') || q.includes('swift') || q.includes('architecture') || q.includes('tech')) {
+        openModal('skills');
+      } else if (q.includes('contact') || q.includes('email') || q.includes('phone')) {
+        openModal('contact');
+      } else if (q.includes('fun') || q.includes('award') || q.includes('achievement')) {
+        openModal('fun');
+      } else {
+        openModal('me');
+      }
+    });
+  }
+})();
+</script>
+
+
+<script>
+function scrollToSection(sectionId) {
+  if (sectionId === 'hero') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+  const el = document.getElementById('section-' + sectionId);
+  if (el) {
+    const yOffset = -90; // sticky header padding
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btnMap = {
+    'btn-me': 'me',
+    'btn-projects': 'projects',
+    'btn-skills': 'skills',
+    'btn-fun': 'fun',
+    'btn-contact': 'contact'
+  };
+
+  Object.keys(btnMap).forEach(function(btnId) {
+    const btn = document.getElementById(btnId);
+    if (btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        scrollToSection(btnMap[btnId]);
+      });
+    }
+  });
+});
+</script>
+
+
+
+<!-- Glassmorphic Tab Content Overlay Modal -->
+<div id="tab-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-xl transition-all duration-300 opacity-0">
+  <div id="modal-card-inner" class="relative w-full max-w-2xl max-h-[85vh] flex flex-col rounded-3xl border border-white/20 bg-[#161b22] text-white shadow-2xl border border-neutral-700 p-6 shadow-2xl backdrop-blur-2xl text-white transform scale-95 transition-all duration-300">
+    
+    <!-- Close Button -->
+    <button onclick="closeTabModal()" class="absolute top-4 right-4 z-10 text-neutral-300 font-medium hover:text-white bg-neutral-800/80 hover:bg-neutral-700 p-2 rounded-full transition">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+
+    <!-- Modal Header Navigation Tabs -->
+    <div class="flex items-center gap-1 overflow-x-auto pb-3 mb-4 border-b border-white/10 pr-10 custom-scrollbar">
+      <button id="modal-tab-me" onclick="switchModalTab('me')" class="flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition border border-transparent">
+        <span>🙋‍♂️ Me</span>
+      </button>
+      <button id="modal-tab-projects" onclick="switchModalTab('projects')" class="flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition border border-transparent">
+        <span>🚀 Projects</span>
+      </button>
+      <button id="modal-tab-skills" onclick="switchModalTab('skills')" class="flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition border border-transparent">
+        <span>⚡ Skills</span>
+      </button>
+      <button id="modal-tab-fun" onclick="switchModalTab('fun')" class="flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition border border-transparent">
+        <span>🎉 Fun</span>
+      </button>
+      <button id="modal-tab-contact" onclick="switchModalTab('contact')" class="flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition border border-transparent">
+        <span>📬 Contact</span>
+      </button>
+    </div>
+
+    <!-- Modal Dynamic Content Body -->
+    <div id="modal-tab-body" class="overflow-y-auto pr-1 flex-1 space-y-4 text-neutral-200">
+    </div>
+  </div>
+</div>
+
+
+<script>
+const tabData = {
+  me: {
+    color: 'teal',
+    html: `
+      <div class="space-y-4">
+        <div class="flex items-center gap-4 rounded-2xl bg-[#21262d] border border-teal-500/40 p-4 border border-teal-500/20">
+          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-500/20 text-teal-400 text-2xl font-bold">👨‍💻</div>
+          <div>
+            <h3 class="text-xl font-extrabold text-white">Dhaval Umraliya</h3>
+            <p class="text-xs font-semibold text-teal-400">Senior iOS Developer • 8+ Years Experience • Surat, India</p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4">
+            <h4 class="font-bold text-white mb-1 text-sm">👋 Professional Summary</h4>
+            <p class="text-xs text-neutral-200 font-medium leading-relaxed">
+              Passionate Senior iOS Developer with 8+ years of experience building scalable, high-performance mobile applications in Swift, SwiftUI, Objective-C, and Combine.
+            </p>
+          </div>
+          
+          <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4">
+            <h4 class="font-bold text-white mb-1 text-sm">💡 Core Philosophy</h4>
+            <p class="text-xs text-neutral-200 font-medium leading-relaxed">
+              Clean Architecture (MVVM-C, VIPER), 60FPS smooth UI micro-animations, memory optimization, modular codebases, and seamless offline sync.
+            </p>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  projects: {
+    color: 'emerald',
+    html: `
+      <div class="space-y-3">
+        <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4">
+          <div class="flex justify-between items-start">
+            <h4 class="text-sm font-bold text-white">LivWell – Fintech & Wellness App</h4>
+            <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-500/30">Aug 2022 – Present</span>
+          </div>
+          <p class="text-[11px] text-emerald-200 mt-1 font-medium">Tech: SwiftUI, Firebase, Wearable SDKs (Co-Fit, CRP Band, HRY Fine)</p>
+          <ul class="list-disc list-inside text-xs text-neutral-200 font-medium mt-2 space-y-1">
+            <li>200K+ downloads with 99.18% crash-free sessions across SEA markets.</li>
+            <li>Integrated HealthKit & wearable SDKs for real-time activity tracking.</li>
+            <li>Automated CI/CD deployment using Fastlane & TestFlight.</li>
+          </ul>
+        </div>
+        
+        <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4">
+          <div class="flex justify-between items-start">
+            <h4 class="text-sm font-bold text-white">AQI.com – Air Quality Monitor</h4>
+            <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full border border-blue-500/30">Mar 2021 – Aug 2022</span>
+          </div>
+          <p class="text-[11px] text-blue-200 mt-1 font-medium">Tech: Swift, Core Location, MapKit, Firebase Realtime DB, Charts</p>
+          <ul class="list-disc list-inside text-xs text-neutral-200 font-medium mt-2 space-y-1">
+            <li>Built AQI air quality monitoring app with real-time data visualization.</li>
+            <li>Implemented location updates, push notifications, and map overlays.</li>
+          </ul>
+        </div>
+      </div>
+    `
+  },
+  skills: {
+    color: 'purple',
+    html: `
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4">
+          <h4 class="text-xs font-bold text-purple-300 mb-2">📱 Languages & Frameworks</h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">Swift</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">SwiftUI</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">UIKit</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">Combine</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">CoreData</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">HealthKit</span>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4">
+          <h4 class="text-xs font-bold text-purple-300 mb-2">🏗 Architecture & Tools</h4>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">MVVM-C</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">VIPER</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">Clean Arch</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">Fastlane</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">TestFlight</span>
+            <span class="bg-purple-500/20 text-purple-200 text-xs px-2.5 py-1 rounded-md border border-purple-500/30">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  fun: {
+    color: 'pink',
+    html: `
+      <div class="grid grid-cols-2 gap-3">
+        <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4 text-center">
+          <div class="text-3xl mb-1">☕</div>
+          <h4 class="font-bold text-white text-xs">Specialty Coffee</h4>
+          <p class="text-[10px] text-neutral-300 font-medium mt-0.5">Pour-over & espresso brews.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4 text-center">
+          <div class="text-3xl mb-1">🎮</div>
+          <h4 class="font-bold text-white text-xs">Interactive Gaming</h4>
+          <p class="text-[10px] text-neutral-300 font-medium mt-0.5">Indie games & design.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4 text-center">
+          <div class="text-3xl mb-1">✍️</div>
+          <h4 class="font-bold text-white text-xs">Tech Articles</h4>
+          <p class="text-[10px] text-neutral-300 font-medium mt-0.5">iOS architecture blogging.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-4 text-center">
+          <div class="text-3xl mb-1">🎨</div>
+          <h4 class="font-bold text-white text-xs">UI Animation</h4>
+          <p class="text-[10px] text-neutral-300 font-medium mt-0.5">Smooth 60fps micro-animations.</p>
+        </div>
+      </div>
+    `
+  },
+  contact: {
+    color: 'amber',
+    html: `
+      <div class="space-y-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <a href="mailto:dhavalumraliya777@gmail.com" class="flex items-center gap-3 rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-3 hover:bg-white/10 transition">
+            <span class="text-2xl">📧</span>
+            <div>
+              <h4 class="text-xs font-bold text-white">Email Me</h4>
+              <p class="text-xs text-amber-300">dhavalumraliya777@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+918401513185" class="flex items-center gap-3 rounded-xl border border-white/10 bg-[#21262d] border border-neutral-700 p-3 hover:bg-white/10 transition">
+            <span class="text-2xl">📞</span>
+            <div>
+              <h4 class="text-xs font-bold text-white">Call Me</h4>
+              <p class="text-xs text-amber-300">+91 84015 13185</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex justify-center pt-2">
+          <a href="Dhaval_Umraliya_Resume.pdf" download="Dhaval_Umraliya_Resume.pdf" class="flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-xs font-semibold text-white hover:bg-blue-500 transition shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download Resume PDF</span>
+          </a>
+        </div>
+      </div>
+    `
+  }
+};
+
+let currentActiveTab = 'me';
+
+function openTabModal(tabKey) {
+  tabKey = (tabKey || 'me').toLowerCase();
+  const modal = document.getElementById('tab-modal');
+  const heroSection = document.getElementById('hero-section');
+  if (!modal) return;
+
+  switchModalTab(tabKey);
+
+  modal.classList.remove('hidden');
+  setTimeout(() => {
+    modal.classList.remove('opacity-0');
+    const inner = modal.querySelector('#modal-card-inner');
+    if (inner) {
+      inner.classList.remove('scale-95');
+      inner.classList.add('scale-100');
+    }
+    if (heroSection) {
+      heroSection.style.opacity = '0.3';
+      heroSection.style.filter = 'blur(6px)';
+      heroSection.style.transition = 'all 0.3s ease';
+    }
+  }, 10);
+}
+
+function closeTabModal() {
+  const modal = document.getElementById('tab-modal');
+  const heroSection = document.getElementById('hero-section');
+  if (!modal) return;
+
+  modal.classList.add('opacity-0');
+  const inner = modal.querySelector('#modal-card-inner');
+  if (inner) {
+    inner.classList.remove('scale-100');
+    inner.classList.add('scale-95');
+  }
+  if (heroSection) {
+    heroSection.style.opacity = '1';
+    heroSection.style.filter = 'none';
+  }
+
+  setTimeout(() => {
+    modal.classList.add('hidden');
+  }, 300);
+}
+
+function switchModalTab(tabKey) {
+  tabKey = tabKey.toLowerCase();
+  currentActiveTab = tabKey;
+  
+  const body = document.getElementById('modal-tab-body');
+  if (body && tabData[tabKey]) {
+    body.innerHTML = tabData[tabKey].html;
+  }
+
+  ['me', 'projects', 'skills', 'fun', 'contact'].forEach(t => {
+    const btn = document.getElementById('modal-tab-' + t);
+    if (btn) {
+      if (t === tabKey) {
+        btn.className = 'flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-blue-600 text-white shadow-lg border border-blue-400/40';
+      } else {
+        btn.className = 'flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition bg-[#21262d] border border-neutral-700 text-neutral-200 font-medium hover:bg-white/10 hover:text-white border border-transparent';
+      }
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btnMap = {
+    'btn-me': 'me',
+    'btn-projects': 'projects',
+    'btn-skills': 'skills',
+    'btn-fun': 'fun',
+    'btn-contact': 'contact'
+  };
+
+  Object.keys(btnMap).forEach(function(btnId) {
+    const btn = document.getElementById(btnId);
+    if (btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openTabModal(btnMap[btnId]);
+      });
+    }
+  });
+
+  const modal = document.getElementById('tab-modal');
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeTabModal();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeTabModal();
+    }
+  });
+});
+</script>
+
+<script src="js/fluid_animation.js"></script>
+</body>
+</html>
