@@ -395,10 +395,59 @@ h1, h2, h3, h4, .font-heading {
 }
 </style>
 
+
+<style>
+/* Adaptive & Mobile-First Responsive Styles */
+@media (max-width: 768px) {
+  .scroll-showcase-container {
+    padding: 1.5rem 1rem !important;
+  }
+  .responsive-section {
+    min-height: auto !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .section-heading {
+    font-size: 1.85rem !important;
+    line-height: 1.25 !important;
+  }
+  .responsive-grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+  .responsive-grid-3 {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  .responsive-grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  .hero-memoji-box {
+    height: 12rem !important;
+    width: 12rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-grid-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+  .metric-card-box {
+    padding: 0.85rem 0.5rem !important;
+  }
+  .metric-card-num {
+    font-size: 1.4rem !important;
+  }
+  .metric-card-label {
+    font-size: 0.7rem !important;
+  }
+}
+</style>
 </head>
 
 <body class="bg-background min-h-screen font-sans antialiased __variable_f367f3">
-<a href="Dhaval_Umraliya_Resume.pdf" download="Dhaval_Umraliya_Resume.pdf" class="fixed top-8 right-6 z-51 cursor-pointer group flex items-center gap-2 rounded-full bg-black hover:bg-neutral-800 text-white font-semibold px-4 py-2.5 shadow-2xl backdrop-blur-2xl transition-all duration-300 hover:scale-105 border border-neutral-700/80">
+<a href="Dhaval_Umraliya_Resume.pdf" download="Dhaval_Umraliya_Resume.pdf" class="hidden sm:flex fixed top-8 right-6 z-51 cursor-pointer group items-center gap-2 rounded-full bg-black hover:bg-neutral-800 text-white font-semibold px-4 py-2.5 shadow-2xl backdrop-blur-2xl transition-all duration-300 hover:scale-105 border border-neutral-700/80">
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
   <span class="text-xs sm:text-sm font-semibold">Download Resume</span>
 </a>
@@ -434,7 +483,7 @@ h1, h2, h3, h4, .font-heading {
     </div>
   </form>
 
-    <div class="mt-4 grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3 md:grid-cols-5">
+    <div class="mt-4 grid w-full max-w-2xl grid-cols-3 gap-2 sm:grid-cols-3 md:grid-cols-5">
     <button id="btn-me" onclick="window.scrollToSection('section-me'); return false;" style="position:relative; z-index:99; cursor:pointer;" data-slot="button" class="inline-flex flex-col items-center justify-center gap-2 text-sm font-medium transition-all cursor-pointer rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/40 dark:bg-neutral-800/60 p-4 sm:p-6 shadow-lg backdrop-blur-xl hover:scale-105 hover:bg-white/60 dark:hover:bg-neutral-700/80 active:scale-95 aspect-square w-full">
       <div class="flex h-full flex-col items-center justify-center gap-1 text-gray-700 dark:text-gray-200">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#329696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laugh"><circle cx="12" cy="12" r="10"></circle><path d="M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5h12Z"></path><line x1="9" x2="9.01" y1="9" y2="9"></line><line x1="15" x2="15.01" y1="9" y2="9"></line></svg>
@@ -479,13 +528,13 @@ h1, h2, h3, h4, .font-heading {
 
     
 <!-- Beautiful Glassmorphism Scroll Showcase Section -->
-<div style="width: 100%; max-width: 72rem; margin-left: auto; margin-right: auto; padding: 3rem 2.5rem; position: relative; z-index: 1;">
+<div class="scroll-showcase-container" style="width: 100%; max-width: 72rem; margin-left: auto; margin-right: auto; padding: 3rem 2.5rem; position: relative; z-index: 1;">
 
   <!-- SECTION 1: ABOUT ME (1 fold layout) -->
-  <section id="section-me" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+  <section id="section-me" class="responsive-section" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
     <!-- Header -->
     <div style="margin-bottom: 1.25rem;">
-        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">About Dhaval Umraliya</h2>
+        <h2 class="section-heading" style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">About Dhaval Umraliya</h2>
         <p style="font-size: 0.875rem; font-weight: 600; color: #14b8a6; margin-top: 0.25rem;">Senior iOS Developer • 8+ Years Experience • Surat, Gujarat, India</p>
     </div>
 
@@ -511,22 +560,22 @@ h1, h2, h3, h4, .font-heading {
     </div>
 
     <!-- Horizontal Metric Cards Row (4 columns, BELOW descriptions) -->
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
-      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
-        <div style="font-size: 1.75rem; font-weight: 900; color: #14b8a6;">8+ Yrs</div>
-        <div style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">iOS Architecture</div>
+    <div class="responsive-grid-4" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+      <div class="metric-card-box" style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div class="metric-card-num" style="font-size: 1.75rem; font-weight: 900; color: #14b8a6;">8+ Yrs</div>
+        <div class="metric-card-label" style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">iOS Architecture</div>
       </div>
-      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
-        <div style="font-size: 1.75rem; font-weight: 900; color: #3b82f6;">200K+</div>
-        <div style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Active Users</div>
+      <div class="metric-card-box" style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div class="metric-card-num" style="font-size: 1.75rem; font-weight: 900; color: #3b82f6;">200K+</div>
+        <div class="metric-card-label" style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Active Users</div>
       </div>
-      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
-        <div style="font-size: 1.75rem; font-weight: 900; color: #10b981;">99.18%</div>
-        <div style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Crash-Free Rate</div>
+      <div class="metric-card-box" style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div class="metric-card-num" style="font-size: 1.75rem; font-weight: 900; color: #10b981;">99.18%</div>
+        <div class="metric-card-label" style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Crash-Free Rate</div>
       </div>
-      <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
-        <div style="font-size: 1.75rem; font-weight: 900; color: #a855f7;">MVVM-C</div>
-        <div style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Clean Architecture</div>
+      <div class="metric-card-box" style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 0.75rem; text-align: center; backdrop-filter: blur(16px); box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s;">
+        <div class="metric-card-num" style="font-size: 1.75rem; font-weight: 900; color: #a855f7;">MVVM-C</div>
+        <div class="metric-card-label" style="font-size: 0.75rem; font-weight: 700; color: #525252; margin-top: 0.25rem;">Clean Architecture</div>
       </div>
     </div>
 
@@ -534,13 +583,13 @@ h1, h2, h3, h4, .font-heading {
   </section>
 
   <!-- SECTION 3: SKILLS -->
-  <section id="section-skills" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
+  <section id="section-skills" class="responsive-section" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
     <div style="margin-bottom: 1.5rem;">
-        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Skills & Technical Stack</h2>
+        <h2 class="section-heading" style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Skills & Technical Stack</h2>
         <p class="text-sm font-semibold text-purple-500 dark:text-purple-400 mt-0.5">iOS Languages, Frameworks, Architecture & Tools</p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+    <div class="responsive-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
       <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
         <h3 style="font-size: 1.1rem; font-weight: 800; color: #9333ea; margin-top: 0; margin-bottom: 1rem;">
           Languages & Core Frameworks
@@ -586,9 +635,9 @@ h1, h2, h3, h4, .font-heading {
   </section>
 
   <!-- SECTION 1.5: WORK EXPERIENCE (Executive Refined Timeline from Resume) -->
-  <section id="section-experience" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 3.5rem;">
+  <section id="section-experience" class="responsive-section" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 3.5rem;">
     <div style="margin-bottom: 1.5rem;">
-        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Work Experience</h2>
+        <h2 class="section-heading" style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Work Experience</h2>
         <p class="text-sm font-semibold text-teal-600 dark:text-teal-400 mt-0.5">8+ Years Career Journey &amp; Engineering Experience</p>
     </div>
 
@@ -626,7 +675,7 @@ h1, h2, h3, h4, .font-heading {
       </div>
 
       <!-- Grid for Roles 3, 4, 5 -->
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+      <div class="responsive-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
         <!-- Role 3: Narola Infotech -->
         <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
@@ -667,13 +716,13 @@ h1, h2, h3, h4, .font-heading {
   </section>
 
   <!-- SECTION 2: PROJECTS (All Resume Projects in Beautiful Glassmorphism Grid) -->
-  <section id="section-projects" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 3rem;">
+  <section id="section-projects" class="responsive-section" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 3rem;">
     <div style="margin-bottom: 1.5rem;">
-        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Featured Projects</h2>
+        <h2 class="section-heading" style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Featured Projects</h2>
         <p class="text-sm font-semibold text-emerald-500 dark:text-emerald-400 mt-0.5">8 Production iOS Applications &amp; Mobile Architectures from Resume</p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+    <div class="responsive-grid-2" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
       <!-- Project 1: LivWell Asia -->
       <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.25rem 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s;">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
@@ -833,13 +882,13 @@ h1, h2, h3, h4, .font-heading {
   </section>
 
       <!-- SECTION 4: EDUCATION -->
-  <section id="section-education" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
+  <section id="section-education" class="responsive-section" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
     <div style="margin-bottom: 1.5rem;">
-        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Education & Academic Background</h2>
+        <h2 class="section-heading" style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Education & Academic Background</h2>
         <p class="text-sm font-semibold text-blue-600 dark:text-blue-400 mt-0.5">Degrees, Qualifications &amp; Academic Distinction</p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+    <div class="responsive-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
       <!-- Degree 1: BCA -->
       <div style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: transform 0.2s; display: flex; flex-direction: column; justify-content: space-between;">
         <div>
@@ -885,13 +934,13 @@ h1, h2, h3, h4, .font-heading {
   </section>
 
 <!-- SECTION 5: CONTACT -->
-  <section id="section-contact" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
+  <section id="section-contact" class="responsive-section" style="scroll-margin-top: 7rem; width: 100%; min-height: 80vh; display: flex; flex-direction: column; justify-content: center; padding-top: 4rem;">
     <div style="margin-bottom: 1.5rem;">
-        <h2 style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Let's Connect</h2>
+        <h2 class="section-heading" style="font-size: 3rem; font-weight: 800; color: #171717; letter-spacing: -0.025em; margin: 0;">Let's Connect</h2>
         <p class="text-sm font-semibold text-amber-500 dark:text-amber-400 mt-0.5">Get in touch for Senior iOS Opportunities & Collaborations</p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+    <div class="responsive-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
       <a href="mailto:dhavalumraliya777@gmail.com" style="border-radius: 1rem; border: 1px solid rgba(229,229,229,0.5); background: rgba(255,255,255,0.65); padding: 1.5rem; text-align: center; backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.2s;">
         <span style="font-size: 2.25rem; margin-bottom: 0.5rem;">📧</span>
         <h4 style="font-size: 1.1rem; font-weight: 800; color: #171717; margin: 0;">Direct Email</h4>
