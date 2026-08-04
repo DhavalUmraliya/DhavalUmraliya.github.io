@@ -216,6 +216,7 @@
 }
 </style>
 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body class="bg-background min-h-screen font-sans antialiased __variable_f367f3">
@@ -239,9 +240,16 @@
   <p class="mt-2 text-sm md:text-base text-neutral-200 font-medium tracking-wide">Swift • SwiftUI • Scalable Mobile Architecture • 200K+ Users</p>
 </div>
 
-<!-- Hero Memoji -->
+<!-- Hero Lottie Animation (Cool Emoji) -->
 <div class="relative z-10 flex items-center justify-center h-56 w-56 sm:h-76 sm:w-76">
-  <img alt="Hero memoji" class="w-full h-full object-contain drop-shadow-2xl transition-transform hover:scale-105" src="landing-memojis.png">
+  <lottie-player
+    src="cool_emoji.json"
+    background="transparent"
+    speed="1"
+    style="width: 100%; height: 100%;"
+    loop
+    autoplay>
+  </lottie-player>
 </div>
 
 <!-- Search Input Form & 5 Interactive Buttons -->
