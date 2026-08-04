@@ -214,7 +214,28 @@
     padding: 0.85rem 0.5rem !important;
   }
 }
+
+/* Hero Buttons Grid System */
+.hero-buttons-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 0.75rem !important;
+  width: 100% !important;
+  max-width: 48rem !important;
+  margin-top: 1rem !important;
+}
+
+@media (max-width: 640px) {
+  .hero-buttons-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.6rem !important;
+  }
+  #btn-contact {
+    grid-column: span 2 / span 2 !important;
+  }
+}
 </style>
+
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
@@ -263,7 +284,7 @@
     </div>
   </form>
 
-    <div class="mt-4 grid w-full max-w-2xl grid-cols-2 gap-2.5 sm:grid-cols-5 sm:gap-3">
+    <div class="hero-buttons-grid">
     <button id="btn-me" onclick="window.scrollToSection('section-me'); return false;" style="position:relative; z-index:99; cursor:pointer;" data-slot="button" class="inline-flex flex-col items-center justify-center gap-2 text-sm font-medium transition-all cursor-pointer rounded-2xl border border-neutral-300 dark:border-neutral-700 bg-white/40 dark:bg-neutral-800/60 p-4 sm:p-6 shadow-lg backdrop-blur-xl hover:scale-105 hover:bg-white/60 dark:hover:bg-neutral-700/80 active:scale-95 aspect-square w-full">
       <div class="flex h-full flex-col items-center justify-center gap-1 text-gray-700 dark:text-gray-200">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#329696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-laugh"><circle cx="12" cy="12" r="10"></circle><path d="M18 13a6 6 0 0 1-6 5 6 6 0 0 1-6-5h12Z"></path><line x1="9" x2="9.01" y1="9" y2="9"></line><line x1="15" x2="15.01" y1="9" y2="9"></line></svg>
